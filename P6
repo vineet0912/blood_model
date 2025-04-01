@@ -1,0 +1,99 @@
+Practical Experiment No-06: UML Modeling for Blood Donation System
+Aim of the Experiment
+To model the structural (class diagram) and behavioral (activity & state chart diagrams) aspects of a Blood Donation System using UML notation.
+
+1. Introduction
+Class diagrams represent the static structure of a system (classes, attributes, methods, and relationships).
+
+Activity diagrams model the workflow and logical sequence of operations.
+
+State chart diagrams depict the dynamic behavior of an object in response to events.
+
+This experiment focuses on:
+
+Class Diagram – Defining entities, attributes, methods, and relationships.
+
+Activity Diagram – Representing the blood donation process flow.
+
+State Chart Diagram – Tracking the state transitions of a blood unit.
+
+2. Class Diagram for Blood Donation System
+A. Key Classes & Attributes
+Class	Attributes	Methods
+Donor	donorID, name, bloodType, contact, lastDonationDate	registerDonor(), checkEligibility()
+BloodUnit	unitID, bloodType, collectionDate, expiryDate, status	testBlood(), updateStatus()
+Donation	donationID, donorID, date, location, healthStatus	recordDonation(), validateDonor()
+Recipient	recipientID, hospital, requiredBloodType, quantityNeeded	requestBlood(), checkAvailability()
+Staff	staffID, name, role, department	conductScreening(), processDonation()
+B. Relationships
+Association
+
+Donor → Donation (1-to-many)
+
+Staff → Donation (1-to-many)
+
+Aggregation
+
+BloodBank contains BloodUnit (whole-part relationship)
+
+Composition
+
+Donation composes BloodUnit (if donation is deleted, blood unit is also deleted)
+
+Dependency
+
+Recipient depends on BloodUnit for availability checks.
+
+C. UML Class Diagram
+(A visual representation showing all classes, attributes, methods, and relationships with proper notations.)
+
+3. Activity Diagram: Blood Donation Process
+Key Activities
+Donor Registration → Eligibility Check → Health Screening
+
+Blood Collection → Testing & Processing → Storage
+
+Recipient Request → Blood Matching → Delivery
+
+Decision Points
+If donor is ineligible → Exit process
+
+If blood fails testing → Discard unit
+
+If blood matches request → Dispatch to recipient
+
+(A flowchart-style diagram showing the sequence of steps with swimlanes for different actors.)
+
+4. State Chart Diagram: Blood Unit Lifecycle
+States of a Blood Unit
+Collected → (After donation)
+
+Tested → (Sent to lab)
+
+Approved / Rejected → (Based on test results)
+
+Stored → (In inventory)
+
+Reserved → (When requested)
+
+Transfused → (Delivered to recipient)
+
+Expired → (If unused before expiry)
+
+Transitions
+Tested → Approved (if safe)
+
+Approved → Stored (until requested)
+
+Stored → Expired (if not used in time)
+
+(A state transition diagram showing possible state changes of a blood unit.)
+
+5. Conclusion
+Class Diagram successfully models the system’s static structure.
+
+Activity Diagram clarifies the step-by-step donation process.
+
+State Chart Diagram tracks the lifecycle of a blood unit.
+
+These UML diagrams help in database design, system development, and workflow optimization.
