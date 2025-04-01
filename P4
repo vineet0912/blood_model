@@ -1,0 +1,152 @@
+Practical Experiment No-04: UML Modeling for Blood Donation System
+Aim of the Experiment
+To model a Blood Donation System using UML techniques, identifying entities, attributes, relationships, and creating use case diagrams to represent system functionality.
+
+1. Introduction to Use Case Modeling
+Use case diagrams provide a visual representation of:
+
+System functionalities (use cases)
+
+Users of the system (actors)
+
+Relationships between these components
+
+2. Blood Donation System Analysis
+A. Entity Identification
+Main entities in the system:
+
+Donor - Individuals who donate blood
+
+Recipient - Patients/hospitals needing blood
+
+Donation - Blood donation event record
+
+BloodUnit - Collected blood product
+
+Campaign - Blood donation drives
+
+Staff - System administrators and medical personnel
+
+B. Attributes Identification
+For each entity:
+
+Donor:
+
+DonorID (PK)
+
+Name, Age, BloodType
+
+ContactInfo, MedicalHistory
+
+LastDonationDate
+
+Recipient:
+
+RecipientID (PK)
+
+RequestingOrganization
+
+RequiredBloodType
+
+QuantityNeeded
+
+UrgencyLevel
+
+Donation:
+
+DonationID (PK)
+
+DonorID (FK)
+
+DonationDate
+
+HealthScreeningResults
+
+StaffID (FK)
+
+C. Relationships Between Entities
+Donor MAKES Donation (1-to-many)
+
+Donation PRODUCES BloodUnit (1-to-1)
+
+Recipient RECEIVES BloodUnit (many-to-many)
+
+Staff MANAGES Donation (1-to-many)
+
+Campaign COLLECTS Donation (1-to-many)
+
+3. Use Case Diagram Components
+A. Actors
+Donor
+
+Recipient
+
+Medical Staff
+
+Administrator
+
+Blood Bank Technician
+
+B. Core Use Cases
+Register Donor Profile
+
+Schedule Donation Appointment
+
+Conduct Health Screening
+
+Process Blood Donation
+
+Test Blood Sample
+
+Request Blood Supply
+
+Manage Inventory
+
+Generate Donation Reports
+
+Organize Donation Campaign
+
+C. Use Case Relationships
+Include:
+
+"Process Blood Donation" includes "Test Blood Sample"
+
+"Schedule Appointment" includes "Check Donor Eligibility"
+
+Extend:
+
+"Record Donation" extends to "Handle Adverse Reaction"
+
+"Request Blood" extends to "Notify Matched Donors" when stock is low
+
+4. UML Diagrams
+A. Use Case Diagram
+[Visual representation showing:]
+
+All actors on left/right sides
+
+System boundary rectangle
+
+Use cases grouped by actor interaction
+
+Relationship arrows (include/extend)
+
+B. Entity-Relationship Diagram
+[Visual representation showing:]
+
+All identified entities as rectangles
+
+Attributes listed for each entity
+
+Relationship lines with cardinality notations
+
+5. Conclusion
+Successfully identified key system entities and their attributes
+
+Established clear relationships between entities
+
+Created comprehensive use case model covering all system functionalities
+
+Demonstrated understanding of include/extend relationships
+
+The models serve as foundation for database design and system development
