@@ -1,0 +1,71 @@
+Practical No-02: Blood Donation System
+A. Aim of the Experiment
+The aim of this experiment is to analyze and estimate the requirements, cost, effort, and duration of a Blood Donation System using project estimation techniques.
+
+B. Problem Definition (Estimation of Project Metrics)
+A Blood Donation System is a software application designed to streamline blood donations, track donor and recipient data, and manage blood inventory efficiently. Estimating the project metrics for such a system involves predicting development effort, cost, and resource allocation using established software estimation techniques.
+
+C. Introduction
+The development of a Blood Donation System requires careful planning, including requirement gathering, feasibility analysis, and cost estimation. The system must be user-friendly, secure, and capable of handling critical emergency cases efficiently.
+
+D. Theory
+1. Objectives
+After completing this experiment, you will be able to:
+(a) Identify and analyze the requirements of a Blood Donation System.
+(b) Apply estimation techniques to determine the effort and cost of developing the system.
+
+2. Project Estimation Techniques
+COCOMO (Constructive Cost Model)
+COCOMO is used to estimate the effort and cost of the Blood Donation System based on project size and complexity.
+
+Types of COCOMO:
+
+Basic COCOMO – Provides a rough estimation based on project size.
+
+Intermediate COCOMO – Includes factors like team experience and environment.
+
+Detailed COCOMO – Breaks down the system into smaller components for precise estimation.
+
+Advantages:
+
+Helps in planning resources efficiently.
+
+Suitable for different project sizes.
+
+Drawbacks:
+
+Requires historical data for accuracy.
+
+Not well-suited for Agile development models.
+
+Halstead’s Complexity Metrics
+Halstead’s metrics help measure the complexity of the Blood Donation System by analyzing the number of operators and operands in the system's code.
+
+Key Metrics:
+
+Program Length (N) = Number of operators and operands.
+
+Program Vocabulary (n) = Unique operators and operands.
+
+Effort (E) = Effort required to develop the system.
+
+Advantages:
+
+Helps in identifying complex sections of the system.
+
+Useful for predicting maintenance efforts.
+
+Drawbacks:
+
+Does not consider external system dependencies.
+
+@ Simulation (If available)
+If available, use software tools to simulate COCOMO estimation and Halstead’s complexity metrics to validate effort predictions.
+
+F. Case Study
+Case Study: Blood Donation System for a Hospital
+A hospital requires a Blood Donation System to manage donor records, blood inventory, and emergency requests. Using COCOMO, we estimate the development cost based on 20,000 lines of code (LOC) and classify it under the semi-detached category for effort calculation.
+
+H. Conclusion
+Project estimation techniques such as COCOMO and Halstead’s Complexity Metrics help in determining the effort, cost, and complexity of developing a Blood Donation System. These techniques improve project planning and resource allocation, ensuring the successful implementation of the system.
+
