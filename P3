@@ -1,0 +1,96 @@
+PRATICAL N0=3
+Aim of the Experiment
+To analyze and document the use cases and actors in a Blood Donation System, and understand the relationships between different use cases.
+
+1. Introduction
+System: Blood Donation Management System
+
+Objective: Create a comprehensive use case model for a system that manages blood donors, donations, inventory, and requests
+
+Importance: Proper use case analysis ensures all system functionalities are captured and helps in designing an effective solution
+
+2. Actors Identification
+Main actors in the system:
+Donor - Individuals who donate blood
+Recipient - Individuals/organizations requesting blood
+Medical Staff - Doctors/nurses handling blood collection
+Admin - System administrators managing operations
+Blood Bank Staff - Personnel handling inventory and testing
+
+3. Use Case Identification
+Core Use Cases:
+Donor Registration
+Actor: Donor
+
+Description: New donors register their information in the system
+
+Schedule Donation
+
+Actor: Donor
+
+Description: Donor books an appointment for blood donation
+
+Conduct Health Screening
+
+Actor: Medical Staff
+
+Description: Medical evaluation before donation
+
+Record Donation
+
+Actor: Medical Staff
+
+Description: Document the blood donation details
+
+Process Blood
+
+Actor: Blood Bank Staff
+
+Description: Test and prepare donated blood for storage
+
+Request Blood
+
+Actor: Recipient
+
+Description: Submit request for specific blood type
+
+Manage Inventory
+
+Actor: Blood Bank Staff
+
+Description: Track blood stock levels
+
+Generate Reports
+
+Actor: Admin
+
+Description: Create donation/usage statistics
+
+4. Use Case Relationships
+Include Relationships:
+"Process Blood" includes "Test Blood Sample"
+
+"Schedule Donation" includes "Check Donor Eligibility"
+
+Extend Relationships:
+"Record Donation" may extend to "Handle Adverse Reaction" if donor has complications
+
+"Request Blood" may extend to "Notify Matched Donors" if stock is low
+
+5. Use Case Diagram Components
+Actors on sides of diagram
+
+Use cases as ovals in middle
+
+Relationships shown with arrows/lines
+
+System boundary rectangle enclosing use cases
+
+6. Conclusion
+Use case analysis helps identify all system functionalities from user perspective
+
+Clear actor definitions ensure proper access control
+
+Relationship mapping shows system workflow and dependencies
+
+This model serves as foundation for system design and development
